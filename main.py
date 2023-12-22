@@ -1,12 +1,11 @@
 import asyncio
 from openai import OpenAI
+from KEYS import *
 
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.filters import CommandStart
 
-TOKEN = "6451493735:AAEWAwXKxnkhszjaIaTR7pDHdDLVrmyr73Y"
-CHATGPT_TOKEN = "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"
 
 dp = Dispatcher()
 client = OpenAI(api_key=CHATGPT_TOKEN)
